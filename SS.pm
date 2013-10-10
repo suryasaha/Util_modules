@@ -49,7 +49,7 @@ sub revcomp{
 	$DNA=$_[0];
 	$DNA=~ s/\s*//g;# clean it
 	$DNA=~ tr/ACGTacgt/TGCAtgca/;
-	return reverse $DNA;
+	return scalar reverse $DNA;
 }
 ########################################################################
 sub mk_dir{
